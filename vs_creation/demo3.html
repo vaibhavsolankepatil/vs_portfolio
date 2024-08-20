@@ -1,0 +1,147 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Calculator</title>
+	<meta name="description" content="Online calculator for quick calculations, along with a large collection of calculators on math, finance, fitness, and more, each with in-depth information.">
+	<link rel="stylesheet" href="/style.css"><script src="//d26tpo4cm8sb6k.cloudfront.net/js/common.js" async=""></script><meta name="viewport" content="width=device-width, initial-scale=1.0">	<link rel="apple-touch-icon" sizes="180x180" href="//d26tpo4cm8sb6k.cloudfront.net/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="//d26tpo4cm8sb6k.cloudfront.net/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="//d26tpo4cm8sb6k.cloudfront.net/icon-16x16.png">
+	<link rel="manifest" href="/manifest.json"><link rel="stylesheet" href="/css/sci.css">	<script src="//d26tpo4cm8sb6k.cloudfront.net/js/scientific3.js" async=""></script>
+	<meta name="google-site-verification" content="04Uv2RwlTLFxQszjq7hb0XQxTEZsl2lLmI5e1-TbcbA">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: red; /* Change the color of the title to red */
+        }
+        .calculator {
+            width: 320px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .display {
+            width: 100%;
+            height: 50px;
+            text-align: right;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 24px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .buttons button {
+            padding: 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s ease;
+        }
+        .buttons button:hover {
+            background-color: #e0e0e0;
+        }
+        .buttons .operator {
+            background-color: #ff8c00;
+            color: #fff;
+        }
+        .buttons .equal {
+            background-color: #4caf50;
+            color: #fff;
+            grid-column: span 2;
+        }
+        .buttons .clear {
+            background-color: #00d0ff;
+            color: #fff;
+            grid-column: span 2;
+        }
+        .buttons .backspace {
+            background-color: #f44336;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator</h1>     <!-- Displayed title in red -->
+	<h1><button style="background-color: #39ff00; color: #000000;">
+		  <a href="https://vaibhavsolankepatil.github.io/calculator/" style="color: inherit; text-decoration: none;">See VS_Creation Website in Single Click</a>
+	</button></h1>
+    <br>
+    <div class="calculator">
+        <input type="text" class="display" id="display" readonly>
+        <div class="buttons">
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button class="operator" onclick="appendOperator('+')">+</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button class="operator" onclick="appendOperator('-')">-</button>
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button class="operator" onclick="appendOperator('*')">*</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="appendNumber('.')">.</button>
+            <button class="backspace" onclick="backspace()">⌫</button>
+            <button class="operator" onclick="appendOperator('/')">/</button>
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button class="equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+
+
+    <script>
+        function appendNumber(number) {
+            document.getElementById('display').value += number;
+        }
+
+        function appendOperator(operator) {
+            document.getElementById('display').value += " " + operator + " ";
+        }
+
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+        }
+
+        function backspace() {
+            let display = document.getElementById('display');
+            display.value = display.value.slice(0, -1);
+        }
+
+        function calculate() {
+            try {
+                let result = eval(document.getElementById('display').value);
+                document.getElementById('display').value = result;
+            } catch (error) {
+                document.getElementById('display').value = 'Error';
+            }
+        }
+    </script>
+</body>
+</html>
