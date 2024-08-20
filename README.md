@@ -26,11 +26,11 @@ Here are some ideas to get you started:
 </a> </p>
 
 <p align="left"> <a href="https://twitter.com/SOLANKEVAIBHAV5" target="blank">
-  <img src="https://img.shields.io/twitter/follow/SOLANKEVAIBHAV5?src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"&style=for-the-badge" alt="SOLANKEVAIBHAV5">
+  <img src="https://img.shields.io/twitter/follow/SOLANKEVAIBHAV5?src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"&style=for-the-badge" alt="SOLANKEVAIBHAV5" /></a> </p>
 
 ☆⁣ 🧑‍💻 I’m currently learning **𝐃𝐢𝐩𝐥𝐨𝐦𝐚 𝐢𝐧 𝐂𝐨𝐦𝐩𝐮𝐭𝐞𝐫 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫𝐢𝐧𝐠 𝐨𝐟 𝐓𝐡𝐢𝐫𝐝 𝐘𝐞𝐚𝐫**
 
-☆⁣ 🧑‍💻 My Second Website VS_Creation...
+☆⁣ 🧑‍💻 My First Website VS_Creation...
 
 ☆⁣ 🧑‍💻 https://vaibhavsolankepatil.github.io/vs_creation/
 
