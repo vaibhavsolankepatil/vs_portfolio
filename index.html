@@ -95,6 +95,83 @@
 				background-color: #4ad46a; /* Darker green on hover */
 			}
 
+            .contact-section {
+			  width: 100%;
+			  max-width: 40rem;
+			  margin-left: auto;
+			  margin-right: auto;
+			  padding: 3rem 1rem;
+			}
+
+			.contact-intro > * + * {
+			  margin-top: 1rem;
+			}
+
+			.contact-title {
+			  font-size: 1.875rem;
+			  line-height: 2.25rem;
+			  font-weight: 700;
+			}
+
+			.contact-description {
+			  color: rgb(107 114 128);
+			}
+
+			.form-group-container {
+			  display: grid;
+			  gap: 1rem;
+			  margin-top: 2rem;
+			}
+
+			.form-group {
+			  display: flex;
+			  flex-direction: column;
+			}
+
+			.form-label {
+			  margin-bottom: 0.5rem;
+			}
+
+			.form-input,
+			.form-textarea {
+			  padding: 0.5rem;
+			  border: 1px solid #e5e7eb;
+			  display: flex;
+			  height: 2.5rem;
+			  width: 100%;
+			  border-radius: 0.375rem;
+			  font-size: 0.875rem;
+			  line-height: 1.25rem;
+			}
+
+			.form-input::placeholder,
+			.form-textarea:focus-visible {
+			  color: #6b7280;
+			}
+
+			.form-input:focus-visible,
+			.form-textarea:focus-visible {
+			  outline: 2px solid #2563eb;
+			  outline-offset: 2px;
+			}
+
+			.form-textarea {
+			  min-height: 120px;
+			}
+
+			.form-submit {
+			  width: 100%;
+			  margin-top: 1.2rem;
+			  background-color: #3124ca;
+			  color: #fff;
+			  padding: 13px 5px;
+			  border-radius: 0.375rem;
+			}
+
+			.green-label {
+					color: #4ad46a;
+			}
+
 		</style>
 
 	</head>
@@ -582,51 +659,71 @@
 							  /* Add any additional styling you need */
 							}
                         </style>
+
+
 						<div class="row contact-form-area">
 							<div class="col-md-12 col-lg-8 col-sm-8 center-div">
 								<div class="contact_form wow fadeInLeft">
 
 									<form action="https://api.web3forms.com/submit" method="POST">
-										<input type="hidden" name="access_key" value="f48e2ee9-9710-4a1f-886e-701248f660e7">
+
+										<input type="hidden" name="access_key" value="f48e2ee9-9710-4a1f-886e-701248f660e7" />
+										<input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+										<input type="hidden" name="from_name" value="My Website" />
+
 										<div class="contact_input_area">
+
 											<div id="success_fail_info"></div>
 											<div class="row">
+
 												<!-- Form Group -->
 												<div class="col-12">
 													<div class="form-group">
-														<input type="text" name="name" class="form-control" placeholder="Name" required="required">
+														<label class="form-label green-label">Full Name</label>
+														<input type="text" name="name" class="form-control" placeholder="Ex : Vaibhav Babasaheb Solanke" required="required">
 													</div>
 												</div>
+
 												<!-- Form Group -->
-												<div class="col-12 col-lg-6">
-													<div class="form-group">
-														<input type="email" name="email" class="form-control" placeholder="Email" required="required">
-													</div>
-												</div>
+													 <div class="col-12">
+														<div class="form-group">
+															<label class="form-label green-label">Email</label>
+															<input type="email" name="email" class="form-control" placeholder="Ex : solankevaibhav740@gmail.com" required="required">
+														</div>
+													 </div>
+
 												<!-- Form Group -->
-												<div class="col-12 col-lg-6">
-													<div class="form-group">
-														<input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
-													</div>
-												</div>
+													 <div class="col-12">
+														<div class="form-group">
+															<label class="form-label green-label">Phone</label>
+															<input type="phone" name="phone" class="form-control" placeholder="Ex : 9529939473" required="required">
+														</div>
+													 </div>
+
 												<!-- Form Group -->
-												<div class="col-12">
-													<div class="form-group">
-														<textarea rows="6" name="message" class="form-control" placeholder="Your Message" required="required"></textarea>
+													<div class="col-12">
+														<div class="form-group">
+															<label class="form-label green-label">Message</label>
+															<textarea rows="6" name="message" class="form-control" placeholder="Your Message" required="required"></textarea>
+														</div>
 													</div>
-												</div>
+
 												<!-- Button -->
-												<div class="col-12 text-center">
-													<input type="hidden" name="redirect" value="https://web3forms.com/success">
-													<button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-secondary ct_btn" title="Submit Your Message!">Send Message</button>
-												</div>
+													<div class="col-12 text-center">
+														<input type="hidden" name="redirect" value="https://web3forms.com/success">
+														<button class="btn btn-secondary ct_btn" type="submit">Send Message</button>
+													</div>
 											</div>
+
 										</div>
+
 									</form>
+
 								</div>
 							</div>
-
 						</div>
+
+
 					</div>
 				</div>
 			</section>
