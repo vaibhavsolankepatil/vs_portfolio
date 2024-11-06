@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Font Awesome 5.15.1 CSS -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+        <style>
+
+            /* Responsive design */
+
+            .wrapper .icon {
+                position: relative;
+                background-color: #ffffff;
+                border-radius: 50%;
+                margin: 10px;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 22px;
+                display: inline-block;
+                align-items: center;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+                transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                color: #333;
+                text-decoration: none;
+            }
+            .wrapper .tooltip {
+                position: absolute;
+                top: 0;
+                line-height: 1.5;
+                font-size: 14px;
+                background-color: #ffffff;
+                color: #ffffff;
+                padding: 5px 8px;
+                border-radius: 5px;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            }
+            .wrapper .tooltip::before {
+                position: absolute;
+                content: "";
+                height: 8px;
+                width: 8px;
+                background-color: #ffffff;
+                bottom: -3px;
+                left: 50%;
+                transform: translate(-50%) rotate(45deg);
+                transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            }
+            .wrapper .icon:hover .tooltip {
+                top: -45px;
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+            }
+            .wrapper .icon:hover span,
+            .wrapper .icon:hover .tooltip {
+                text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+            }
+            .wrapper .facebook:hover,
+            .wrapper .facebook:hover .tooltip,
+            .wrapper .facebook:hover .tooltip::before {
+                background-color: #3b5999;
+                color: #ffffff;
+            }
+            .wrapper .linkedin:hover,
+            .wrapper .linkedin:hover .tooltip,
+            .wrapper .linkedin:hover .tooltip::before {
+                background-color: #3b5999;
+                color: #ffffff;
+            }
+            .wrapper .twitter:hover,
+            .wrapper .twitter:hover .tooltip,
+            .wrapper .twitter:hover .tooltip::before {
+                background-color: #46c1f6;
+                color: #ffffff;
+            }
+            .wrapper .instagram:hover,
+            .wrapper .instagram:hover .tooltip,
+            .wrapper .instagram:hover .tooltip::before {
+                background-color: #e1306c;
+                color: #ffffff;
+            }
+            .wrapper .github:hover,
+            .wrapper .github:hover .tooltip,
+            .wrapper .github:hover .tooltip::before {
+                background-color: #333333;
+                color: #ffffff;
+            }
+            .wrapper .youtube:hover,
+            .wrapper .youtube:hover .tooltip,
+            .wrapper .youtube:hover .tooltip::before {
+                background-color: #de463b;
+                color: #ffffff;
+            }
+            .wrapper .telegram:hover,
+            .wrapper .telegram:hover .tooltip,
+            .wrapper .telegram:hover .tooltip::before {
+                background-color: #0088cc;
+                color: #ffffff;
+            }
+            .wrapper .whatsapp:hover,
+            .wrapper .whatsapp:hover .tooltip,
+            .wrapper .whatsapp:hover .tooltip::before {
+                background-color: #25D366;
+                color: #ffffff;
+            }
+
+            .container1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                color: #fff;
+                text-align: center;
+            }
+
+            .name {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #39ff00; /* Add this line to change the color */
+            }
+
+            .wrapper .snapchat:hover,
+            .wrapper .snapchat:hover .tooltip,
+            .wrapper .snapchat:hover .tooltip::before {
+                background-color: #fffc00; /* Snapchat yellow color */
+                color: #000000; /* Black text color */
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+            <div class="container1">
+                <div class="social-icons">
+                    <div class="wrapper">
+
+                        <a href="https://instagram.com/vaibhav_solanke_.patil" class="icon instagram">
+                            <div class="tooltip">Instagram</div>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </a>
+
+                        <a href="https://www.facebook.com/vaibhav.solanke.9529" class="icon facebook">
+                            <div class="tooltip">Facebook</div>
+                            <span><i class="fab fa-facebook-f"></i></span>
+                        </a>
+
+                        <a href="https://www.youtube.com/@vaibhavsolankepatil?sub_confirmation=1" class="icon youtube">
+                            <div class="tooltip">Youtube</div>
+                            <span><i class="fab fa-youtube"></i></span>
+                        </a>
+
+                        <a href="https://t.me/vaibhavsolankepatil" class="icon telegram">
+                            <div class="tooltip">Telegram</div>
+                            <span><i class="fab fa-telegram-plane"></i></span>
+                        </a>
+
+                        <a href="https://www.snapchat.com/add/vaibhavsol.pa?share_id=YHLUpZkWn_s&locale=en-GB" class="icon snapchat">
+                            <div class="tooltip">Snapchat</div>
+                            <span><i class="fab fa-snapchat-ghost"></i></span>
+                        </a>
+
+                        <a href="https://wa.me/9529939473?text=Hi...👋 I am *...Type Your Name...*" class="icon whatsapp">
+                            <div class="tooltip">WhatsApp</div>
+                            <span><i class="fab fa-whatsapp"></i></span>
+                        </a>
+
+                        <a href="https://twitter.com/SOLANKEVAIBHAV5" class="icon twitter">
+                            <div class="tooltip">Twitter</div>
+                            <span><i class="fab fa-twitter"></i></span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/vaibhav-solanke-2a3a47258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BC%2FBoopyITJOthkDUAN9fgQ%3D%3D" class="icon linkedin">
+                            <div class="tooltip">LinkedIn</div>
+                            <span><i class="fab fa-linkedin"></i></span>
+                        </a>
+
+                        <a href="https://github.com/Vaibhavsolankepatil" class="icon github">
+                            <div class="tooltip">Github</div>
+                            <span><i class="fab fa-github"></i></span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+    </body>
+
+</html>

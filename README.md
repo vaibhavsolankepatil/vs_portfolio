@@ -30,9 +30,9 @@ Here are some ideas to get you started:
 
 ☆⁣ 🧑‍💻 I’m currently learning **𝐃𝐢𝐩𝐥𝐨𝐦𝐚 𝐢𝐧 𝐂𝐨𝐦𝐩𝐮𝐭𝐞𝐫 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫𝐢𝐧𝐠 𝐨𝐟 𝐓𝐡𝐢𝐫𝐝 𝐘𝐞𝐚𝐫**
 
-☆⁣ 🧑‍💻 My First Website "VS_Creation..." Developed by mi...
+☆⁣ 🧑‍💻 My First Website "VS_Portfolio..." Developed by mi...
 
-☆⁣ 🧑‍💻 https://vaibhavsolankepatil.github.io/vs_creation/
+☆⁣ 🧑‍💻 https://vaibhavsolankepatil.github.io/vs_portfolio/
 
 <h3 align="left">Connect with me :</h3>
 
